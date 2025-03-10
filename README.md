@@ -18,7 +18,7 @@
 </head>
 <body>
 
-    <h1>Coding Club</h1>
+    <h1>Yollo</h1>
     <p>This is your <br> first website!</p>
 
 
