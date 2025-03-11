@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,28 +14,31 @@
             font-family: 'Lucida Handwriting', cursive; /* Cute font */
             padding: 50px; /* Creates space for the border */
             position: relative;
+            margin: 0;
+            border: 10px solid transparent; /* Invisible border to make space for the emoji border */
+            background-clip: padding-box; /* Makes sure the background is behind the border */
         }
 
         /* Emoji border around the whole website */
-        body::before {
+        body::before, body::after {
             content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸"; 
             display: block;
             text-align: center;
             font-size: 20px;
             position: absolute;
-            top: 0;
             left: 0;
             width: 100%;
+            color: #ff69b4; /* Add color to make it pop */
         }
+
+        /* Top border */
+        body::before {
+            top: 0;
+        }
+
+        /* Bottom border */
         body::after {
-            content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸"; 
-            display: block;
-            text-align: center;
-            font-size: 20px;
-            position: absolute;
             bottom: 0;
-            left: 0;
-            width: 100%;
         }
 
         /* Title (h1) styling */
