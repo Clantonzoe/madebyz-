@@ -5,7 +5,7 @@
     <title>Page Title</title>
     <style>
         body {
-            background-image: url('https://th.bing.com/th/id/OIP.9wqXUNkWIOoTgbmnpvpVtQHaNK?rs=1&pid=ImgDetMain');
+            background-image: url('https://th.bing.com/th/id/R.668eec52e2f90f9e517c65905a846704?rik=ADT3vRLOgC1syg&pid=ImgRaw&r=0');
             background-size: cover; /* Ensures the image covers the entire page */
             background-position: center; /* Centers the image */
             background-repeat: no-repeat; /* Prevents the image from repeating */
