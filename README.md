@@ -9,7 +9,7 @@
             background-size: cover; /* Ensures the image covers the entire page */
             background-position: center; /* Centers the image */
             background-repeat: no-repeat; /* Prevents the image from repeating */
-            background-color: #fdebd0; /* Fallback color */
+            background-color: #f6adc6; /*  nadeshiko pink color */
             font-family: 'Lucida Handwriting', cursive; /* Keeps the font you added */
         }
         h1 {
