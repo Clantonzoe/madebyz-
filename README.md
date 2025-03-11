@@ -36,9 +36,17 @@
             top: 0;
         }
 
-        /* Bottom border */
+        /* Bottom border fixed to the very bottom */
         body::after {
-            bottom: 0;
+            content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸"; 
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            position: fixed;  /* Keeps it at the very bottom */
+            left: 0;
+            width: 100%;
+            bottom: 0;  /* Sticks it to the bottom */
+            color: #ff69b4;
         }
 
         /* Title (h1) styling */
