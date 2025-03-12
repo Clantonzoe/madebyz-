@@ -23,7 +23,8 @@
             font-size: 32px;
         }
 
-        p {
+        .content {
+            display: none;
             color: #145A32;
             background-color: rgba(255, 240, 245, 0.8);
             padding: 15px;
@@ -34,6 +35,10 @@
             margin: 20px auto;
             font-size: 18px;
             box-shadow: 0 0 10px #ff66b2;
+        }
+
+        .content.active {
+            display: block;
         }
 
         .toggle-btn {
@@ -53,7 +58,7 @@
             margin-bottom: 20px;
         }
 
-        .nav a {
+        .nav button {
             text-decoration: none;
             color: white;
             background: #ff1493;
@@ -61,30 +66,42 @@
             border-radius: 10px;
             margin: 5px;
             display: inline-block;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="shop.html">Shop</a>
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('about')">About</button>
+        <button onclick="showPage('shop')">Shop</button>
     </div>
     
     <h1>Yollo</h1>
-    <p id="text-box">This is your <br> first website!</p>
+    
+    <div id="home" class="content active">This is your first website!</div>
+    <div id="about" class="content">Welcome to the About section!</div>
+    <div id="shop" class="content">Check out our cute shop!</div>
+    
     <button class="toggle-btn" onclick="togglePosition()">Move Up/Down</button>
     
     <script>
         let moved = false;
         function togglePosition() {
-            let textBox = document.getElementById('text-box');
+            let activePage = document.querySelector('.content.active');
             if (moved) {
-                textBox.style.transform = 'translateY(0px)';
+                activePage.style.transform = 'translateY(0px)';
             } else {
-                textBox.style.transform = 'translateY(50px)';
+                activePage.style.transform = 'translateY(50px)';
             }
             moved = !moved;
+        }
+
+        function showPage(pageId) {
+            let pages = document.querySelectorAll('.content');
+            pages.forEach(page => page.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
         }
     </script>
 </body>
