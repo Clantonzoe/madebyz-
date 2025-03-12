@@ -1,108 +1,80 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cute Website</title>
+    <title>Page Title</title>
     <style>
+        /* Website background settings */
         body {
             background-image: url('https://th.bing.com/th/id/R.668eec52e2f90f9e517c65905a846704?rik=ADT3vRLOgC1syg&pid=ImgRaw&r=0');
-            background-size: cover;
+            background-size: cover; /* Makes sure image fills the whole page */
             background-position: center;
             background-repeat: no-repeat;
-            background-color: #f6adc6;
-            font-family: 'Lucida Handwriting', cursive;
-            padding: 50px;
-            margin: 0;
+            background-color: #f6adc6; /* Nadeshiko Pink */
+            font-family: 'Lucida Handwriting', cursive; /* Cute font */
+            padding: 50px; /* Creates space for the border */
             position: relative;
+            margin: 0;
+            border: 10px solid transparent; /* Invisible border to make space for the emoji border */
+            background-clip: padding-box; /* Makes sure the background is behind the border */
         }
 
+        /* Emoji border around the whole website */
+        body::before, body::after {
+            content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸"; 
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            color: #ff69b4; /* Add color to make it pop */
+        }
+
+        /* Top border */
+        body::before {
+            top: 0;
+        }
+
+        /* Bottom border fixed to the very bottom */
+        body::after {
+            content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸"; 
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            position: fixed;  /* Keeps it at the very bottom */
+            left: 0;
+            width: 100%;
+            bottom: 0;  /* Sticks it to the bottom */
+            color: #ff69b4;
+        }
+
+        /* Title (h1) styling */
         h1 {
             text-align: center;
-            color: #ff1493;
+            color: #ff1493; /* Hot pink title */
             font-size: 32px;
         }
 
-        .content {
-            display: none;
+        /* Fix the text box background & add rounded edges */
+        p {
             color: #145A32;
-            background-color: rgba(255, 240, 245, 0.8);
+            background-color: rgba(255, 240, 245, 0.8); /* Soft pinkish-white with slight transparency */
             padding: 15px;
-            border-radius: 15px;
-            border: 2px solid #ff85a2;
+            border-radius: 15px; /* Smooth, rounded edges */
+            border: 2px solid #ff85a2; /* Cute pink border */
             text-align: center;
             width: 50%;
-            margin: 20px auto;
+            margin: 20px auto; /* Centers it */
             font-size: 18px;
-            box-shadow: 0 0 10px #ff66b2;
-        }
-
-        .content.active {
-            display: block;
-        }
-
-        .toggle-btn {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #ff85a2;
-            color: white;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            border-radius: 10px;
-        }
-
-        .nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .nav button {
-            text-decoration: none;
-            color: white;
-            background: #ff1493;
-            padding: 10px 15px;
-            border-radius: 10px;
-            margin: 5px;
-            display: inline-block;
-            border: none;
-            cursor: pointer;
+            box-shadow: 0 0 10px #ff66b2; /* Soft glowing effect */
         }
     </style>
 </head>
 <body>
-    <div class="nav">
-        <button onclick="showPage('home')">Home</button>
-        <button onclick="showPage('about')">About</button>
-        <button onclick="showPage('shop')">Shop</button>
-    </div>
-    
-    <h1>Yollo</h1>
-    
-    <div id="home" class="content active">This is your first website!</div>
-    <div id="about" class="content">Welcome to the About section!</div>
-    <div id="shop" class="content">Check out our cute shop!</div>
-    
-    <button class="toggle-btn" onclick="togglePosition()">Move Up/Down</button>
-    
-    <script>
-        let moved = false;
-        function togglePosition() {
-            let activePage = document.querySelector('.content.active');
-            if (moved) {
-                activePage.style.transform = 'translateY(0px)';
-            } else {
-                activePage.style.transform = 'translateY(50px)';
-            }
-            moved = !moved;
-        }
 
-        function showPage(pageId) {
-            let pages = document.querySelectorAll('.content');
-            pages.forEach(page => page.classList.remove('active'));
-            document.getElementById(pageId).classList.add('active');
-        }
-    </script>
+    <h1>Yollo</h1>
+    <p>This is your <br> first website!</p>
+
 </body>
 </html>
