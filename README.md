@@ -3,6 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Title</title>
+
+    <!-- Favicon (Make sure favicon-32x32.png is in the same folder as this file) -->
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    
     <style>
         /* Website background settings */
         body {
@@ -19,16 +23,16 @@
             background-clip: padding-box; /* Makes sure the background is behind the border */
         }
 
-        /* Emoji border around the whole website */
+        /* Emoji border around the whole website (Default for big screens) */
         body::before, body::after {
-            content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸"; 
+            content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸";
             display: block;
             text-align: center;
             font-size: 20px;
             position: absolute;
             left: 0;
             width: 100%;
-            color: #ff69b4; /* Add color to make it pop */
+            color: #ff69b4;
         }
 
         /* Top border */
@@ -38,7 +42,7 @@
 
         /* Bottom border fixed to the very bottom */
         body::after {
-            content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸"; 
+            content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸";
             display: block;
             text-align: center;
             font-size: 20px;
@@ -47,6 +51,21 @@
             width: 100%;
             bottom: 0;  /* Sticks it to the bottom */
             color: #ff69b4;
+        }
+
+        /* Responsive Emoji Border Adjustments */
+        @media (max-width: 1024px) {  /* Tablets */
+            body::before, body::after {
+                content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸";
+                font-size: 18px; /* Slightly smaller emojis */
+            }
+        }
+
+        @media (max-width: 600px) {  /* Phones */
+            body::before, body::after {
+                content: "🎀🌸🎀🌸🎀🌸";
+                font-size: 16px; /* Even smaller emojis */
+            }
         }
 
         /* Title (h1) styling */
@@ -73,8 +92,8 @@
 </head>
 <body>
 
-    <h1>Yollo</h1>
-    <p>This is your <br> first website!</p>
+    <h1>Welcome to My Website!</h1>
+    <p>This is a cute and cozy space for bracelets & spa tips. 🎀💖</p>
 
 </body>
 </html>
