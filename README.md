@@ -26,7 +26,22 @@
 </div>
 
 <style>
-    /* Product section */
+    /* Ensure background stays */
+    body {
+        background-image: url('https://th.bing.com/th/id/R.668eec52e2f90f9e517c65905a846704?rik=ADT3vRLOgC1syg&pid=ImgRaw&r=0');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #f6adc6;
+        font-family: 'Lucida Handwriting', cursive;
+        padding: 50px;
+        position: relative;
+        margin: 0;
+        border: 10px solid transparent;
+        background-clip: padding-box;
+    }
+
+    /* Products section styling */
     .gallery {
         display: flex;
         justify-content: center;
@@ -49,17 +64,17 @@
     .product h3 {
         color: #ff1493;
         font-size: 22px;
-        font-family: 'Pacifico', cursive; /* Fancy cursive font */
+        font-family: 'Pacifico', cursive; /* Cursive font */
         margin-top: 10px;
     }
 
     .product p {
-        color: #145A32;
+        color: #ff69b4; /* Pink text color */
         background-color: rgba(255, 240, 245, 0.8);
         padding: 15px;
         border-radius: 15px;
         font-size: 20px; /* Bigger text */
-        font-family: 'Pacifico', cursive; /* Cute cursive font */
+        font-family: 'Pacifico', cursive; /* Cursive font */
         box-shadow: 0 0 5px #ff66b2;
     }
 </style>
