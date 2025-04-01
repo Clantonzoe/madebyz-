@@ -1,6 +1,5 @@
-<!-- Favicon (Make sure favicon-32x32.png is in the same folder as this file) -->
-<link rel="icon" type="image/png" href="favicon-32x32.png">
-
+<!-- Favicon (Make sure favicon image is in the same folder as this file) -->
+<link rel="icon" type="image/png" href="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png">
 <style>
     /* Website background settings */
     body {
