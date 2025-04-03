@@ -1,201 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cute Website</title>
-    <link rel="icon" type="image/png" href="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png">
-    <style>
-        /* Website background settings */
-        body {
-            background-image: url('https://th.bing.com/th/id/R.668eec52e2f90f9e517c65905a846704?rik=ADT3vRLOgC1syg&pid=ImgRaw&r=0');
-            background-size: cover; /* Ensures the background is not zoomed in */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: #f6adc6; /* Fallback pink */
-            font-family: 'Lucida Handwriting', cursive;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh; /* Ensure full height of the page */
+<style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+</style>
+<!-- Favicon (Make sure favicon image is in the same folder as this file) -->
+<link rel="icon" type="image/png" href="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png">
+<style>
+    /* Website background settings */
+    body {
+        background-image: url('https://th.bing.com/th/id/R.668eec52e2f90f9e517c65905a846704?rik=ADT3vRLOgC1syg&pid=ImgRaw&r=0');
+        background-size: cover; /* Makes sure image fills the whole page */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #f6adc6; /* Nadeshiko Pink */
+        font-family: 'Lucida Handwriting', cursive; /* Cute font */
+        padding: 50px; /* Creates space for the border */
+        position: relative;
+        margin: 0;
+        border: 10px solid transparent; /* Invisible border to make space for the emoji border */
+        background-clip: padding-box; /* Makes sure the background is behind the border */
+    }
+
+    /* Emoji border around the whole website (Default for big screens) */
+    body::before, body::after {
+        content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸";
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        color: #ff69b4;
+    }
+
+    /* Top border */
+    body::before {
+        top: 0;
+    }
+
+    /* Bottom border fixed to the very bottom */
+    body::after {
+        content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸";
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        position: fixed;  /* Keeps it at the very bottom */
+        left: 0;
+        width: 100%;
+        bottom: 0;  /* Sticks it to the bottom */
+        color: #ff69b4;
+    }
+
+    /* Responsive Emoji Border Adjustments */
+    @media (max-width: 1024px) {  /* Tablets */
+        body::before, body::after {
+            content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸";
+            font-size: 18px; /* Slightly smaller emojis */
         }
+    }
 
-        /* Side Navigation bar (Hearts) */
-        nav {
-            position: fixed;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            z-index: 1000;
+    @media (max-width: 600px) {  /* Phones */
+        body::before, body::after {
+            content: "🎀🌸🎀🌸🎀🌸";
+            font-size: 16px; /* Even smaller emojis */
         }
+    }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: rgba(255, 240, 245, 0.8);
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-            border-radius: 15px;
-        }
+    /* Title (h1) styling */
+    h1 {
+        text-align: center;
+        color: #ff1493; /* Hot pink title */
+        font-size: 32px;
+    }
 
-        nav ul li {
-            margin: 15px;
-        }
+    /* Fix the text box background & add rounded edges */
+    p {
+        color: #145A32;
+        background-color: rgba(255, 240, 245, 0.8); /* Soft pinkish-white with slight transparency */
+        padding: 15px;
+        border-radius: 15px; /* Smooth, rounded edges */
+        border: 2px solid #ff85a2; /* Cute pink border */
+        text-align: center;
+        width: 50%;
+        margin: 20px auto; /* Centers it */
+        font-size: 18px;
+        box-shadow: 0 0 10px #ff66b2; /* Soft glowing effect */
+    }
 
-        nav ul li a {
-            text-decoration: none;
-            color: #ff1493; /* Hot pink color */
-            font-size: 40px;
-            padding: 10px 20px;
-            transition: transform 0.3s ease;
-        }
+    /* Navigation Bar Style */
+    nav {
+        background-color: rgba(255, 182, 193, 0.9); /* Light pink background with transparency */
+        padding: 10px 20px;
+        text-align: center;
+        border-radius: 10px; /* Rounded corners for the menu */
+        margin-top: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
 
-        nav ul li a:hover {
-            transform: scale(1.2); /* Hover effect */
-        }
+    nav a {
+        text-decoration: none;
+        color: #ff1493; /* Hot pink color */
+        font-size: 18px;
+        margin: 0 15px;
+        font-family: 'Pacifico', cursive; /* Cute cursive font */
+    }
 
-        /* Section Styling */
-        .section {
-            padding: 50px 20px;
-            text-align: center;
-            color: #ff1493;
-            margin-left: 200px; /* Space for the sidebar */
-            margin-bottom: 50px;
-        }
+    nav a:hover {
+        color: #ff66b2; /* Hover color */
+        text-decoration: underline;
+    }
+</style>
 
-        /* Categories that only show when clicked */
-        .section-hidden {
-            display: none;
-        }
+<!-- Google Font for Cursive Text -->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-        /* Products Section */
-        .gallery {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 30px;
-        }
+<!-- Navigation Bar -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-        .product {
-            text-align: center;
-            width: 250px;
-            margin-bottom: 20px;
-        }
-
-        .product img {
-            width: 100%;
-            max-width: 200px;
-            border-radius: 15px;
-            box-shadow: 0 0 10px #ff66b2;
-        }
-
-        .product h3 {
-            color: #ff1493;
-            font-size: 22px;
-            font-family: 'Pacifico', cursive;
-            margin-top: 10px;
-        }
-
-        .product p {
-            color: #ff69b4;
-            background-color: rgba(255, 240, 245, 0.8);
-            padding: 15px;
-            border-radius: 15px;
-            font-size: 20px;
-            box-shadow: 0 0 5px #ff66b2;
-        }
-
-        /* Wallpapers Sections */
-        #phone-wallpapers, #tablet-computer-wallpapers, #contact {
-            background-color: rgba(255, 240, 245, 0.8);
-            padding: 50px;
-            margin-bottom: 50px;
-            border-radius: 15px;
-        }
-
-        #phone-wallpapers img, #tablet-computer-wallpapers img {
-            width: 100%;
-            max-width: 400px;
-            margin: 20px auto;
-            display: block;
-            border-radius: 15px;
-        }
-
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Contact Section */
-        #contact {
-            background-color: rgba(255, 240, 245, 0.8);
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Side Navigation with Hearts -->
-    <nav>
-        <ul>
-            <li><a href="javascript:void(0)" onclick="showSection('phone-wallpapers')">💗</a></li>
-            <li><a href="javascript:void(0)" onclick="showSection('tablet-computer-wallpapers')">💗</a></li>
-            <li><a href="javascript:void(0)" onclick="showSection('products')">💗</a></li>
-            <li><a href="javascript:void(0)" onclick="showSection('contact')">💗</a></li>
-        </ul>
-    </nav>
-
-    <!-- Phone Wallpapers Section -->
-    <div id="phone-wallpapers" class="section section-hidden">
-        <h1>Phone Wallpapers 💖</h1>
-        <p>Here are some cute wallpapers for your phone! 📱✨</p>
-        <img src="https://i.pinimg.com/736x/ec/77/25/ec772572084f3669a1d93ec4ac07f480.jpg" alt="Ochaco Uraraka pink phone wallpaper">
-        <p>🌺 Ochaco Uraraka pink phone wallpaper 🌺</p>
-    </div>
-
-    <!-- Tablet & Computer Wallpapers Section -->
-    <div id="tablet-computer-wallpapers" class="section section-hidden">
-        <h1>Tablet & Computer Wallpapers 💖</h1>
-        <p>Here are some wallpapers perfect for your tablet or computer! 💻✨</p>
-        <img src="https://wallpaperaccess.com/full/1167293.jpg" alt="Pink Aesthetic Tablet Wallpaper">
-        <img src="https://wallpapercave.com/wp/wp10497374.jpg" alt="Cute Room Tablet Wallpaper">
-        <img src="https://wallpaperbat.com/img/637518-my-hero-academia-season-4-wallpaper.jpg" alt="Deku and Miro yellow and green wallpaper">
-        <p>💛💚 Deku and Miro yellow and green wallpaper 💛💚</p>
-    </div>
-
-    <!-- Products Section -->
-    <div id="products" class="section section-hidden">
-        <h1>Our Cute Products 💖</h1>
-        <div class="gallery">
-            <div class="product">
-                <img src="https://th.bing.com/th/id/R.1c6e1a5b560d3ec587e3880887bc53ff?rik=wyTBAYKA7bpmUg&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f25600000%2fHello-Kitty-Sitting-hello-kitty-25604546-1210-1429.jpg&ehk=XFvh1tuK1a095ImwQYh02IJ1p5UxyX%2fk5JdMnGn306Y%3d&risl=&pid=ImgRaw&r=0" alt="Hello Kitty">
-                <h3>💖 Hello Kitty Plushie 💖</h3>
-                <p>The softest and cutest Hello Kitty plush, perfect for cuddles! 🎀</p>
-            </div>
+<!-- Products Section -->
+<div id="products" class="section">
+    <h1>Our Cute Products 💖</h1>
+    <div class="gallery">
+        <div class="product">
+            <img src="https://th.bing.com/th/id/R.1c6e1a5b560d3ec587e3880887bc53ff?rik=wyTBAYKA7bpmUg&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f25600000%2fHello-Kitty-Sitting-hello-kitty-25604546-1210-1429.jpg&ehk=XFvh1tuK1a095ImwQYh02IJ1p5UxyX%2fk5JdMnGn306Y%3d&risl=&pid=ImgRaw&r=0" alt="Hello Kitty">
+            <h3>💖 Hello Kitty Plushie 💖</h3>
+            <p>The softest and cutest Hello Kitty plush, perfect for cuddles! 🎀</p>
+        </div>
+        
+        <div class="product">
+            <img src="https://wallpaperaccess.com/full/1167293.jpg" alt="Pink Aesthetic">
+            <h3>🌸 Dreamy Aesthetic Wallpaper 🌸</h3>
+            <p>Transform your room with this beautiful soft pink aesthetic vibe! ✨</p>
+        </div>
+        
+        <div class="product">
+            <img src="https://wallpapercave.com/wp/wp10497374.jpg" alt="Cute Room">
+            <h3>🎀 Cozy Pastel Bedroom 🎀</h3>
+            <p>Get inspired by this super cozy pastel bedroom setup! So dreamy~ ☁️</p>
         </div>
     </div>
+</div>
 
-    <!-- Contact Section -->
-    <div id="contact" class="section section-hidden">
-        <h1>Contact Us 💌</h1>
-        <p>If you have any questions, feel free to reach out! 🌸</p>
-    </div>
+<style>
+    /* Ensure background stays */
+    body {
+        background-image: url('https://th.bing.com/th/id/R.668eec52e2f90f9e517c65905a846704?rik=ADT3vRLOgC1syg&pid=ImgRaw&r=0');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #f6adc6;
+        font-family: 'Lucida Handwriting', cursive;
+        padding: 50px;
+        position: relative;
+        margin: 0;
+        border: 10px solid transparent;
+        background-clip: padding-box;
+    }
 
-    <script>
-        // Function to show the selected section and hide others
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => {
-                if (section.id === sectionId) {
-                    section.classList.remove('section-hidden');
-                } else {
-                    section.classList.add('section-hidden');
-                }
-            });
-        }
-    </script>
+    /* Products section styling */
+    .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
 
-</body>
-</html>
+    .product {
+        text-align: center;
+        width: 250px;
+    }
+
+    .product img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #ff66b2;
+    }
+
+    .product h3 {
+        color: #ff1493;
+        font-size: 22px;
+        font-family: 'Pacifico', cursive; /* Cursive font */
+        margin-top: 10px;
+    }
+
+    .product p {
+        color: #ff69b4; /* Pink text color */
+        background-color: rgba(255, 240, 245, 0.8);
+        padding: 15px;
+        border-radius: 15px;
+        font-size: 20px; /* Bigger text */
+        font-family: 'Pacifico', cursive; /* Cursive font */
+        box-shadow: 0 0 5px #ff66b2;
+    }
+</style>           
