@@ -1,10 +1,10 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Cute Product Shop 🎀</title>
-<link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/R.04a3403bd8a45887c85b8edaaeb4cd1c?rik=ImF%2bvdp%2bC3ONQA&pid=ImgRaw&r=0">
+    <link rel="icon" type="image/png" href="https://th.bing.com/th/id/R.04a3403bd8a45887c85b8edaaeb4cd1c?rik=ImF%2bvdp%2bC3ONQA&pid=ImgRaw&r=0">
+</head>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
