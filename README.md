@@ -6,7 +6,7 @@
     <title>Cute Product Shop 🎀</title>
 
     <!--  Your Custom Favicon --!>
-    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/202674172?s=400&u=c949d71eb5e64b2a5e155c016efc8e1ffd6c91e5&v=4" />
+    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/202674172?s=400&u=c949d71eb5e64b2a5e155c016efc8e1ffd6c91e5&v=4"/>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
