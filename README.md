@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -5,6 +6,12 @@
     <title>Cute Product Shop 🎀</title>
     <link rel="icon" type="image/png" href="https://th.bing.com/th/id/R.04a3403bd8a45887c85b8edaaeb4cd1c?rik=ImF%2bvdp%2bC3ONQA&pid=ImgRaw&r=0">
 </head>
+<body>
+    <h1>Welcome to the Cute Product Shop 🎀</h1>
+    <p>We got cute stuff, sparkles, and everything nice 💅✨</p>
+</body>
+</html>
+
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
