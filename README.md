@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Cute Product Shop 🎀</title>
-    <link rel="icon" type="image/png" href="https://th.bing.com/th/id/R.04a3403bd8a45887c85b8edaaeb4cd1c?rik=ImF%2bvdp%2bC3ONQA&pid=ImgRaw&r=0">
+    <title>🌺MADEBYZ🌺s</title>
+    <link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/R.c7306f0ad63c6c743431100fe0acfc2d?rik=6tL6RSA5KhhrpQ&pid=ImgRaw&r=0.jpg">
 </head>
 <body>
-    <h1>Welcome to the Cute Product Shop 🎀</h1>
-    <p>We got cute stuff, sparkles, and everything nice 💅✨</p>
-</body>
 </html>
 
 
