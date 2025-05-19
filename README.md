@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html>
 <head>
     <title>🌺MADEBYZ🌺</title>
-    <link rel="icon" type="image/x-icon" href="https://wallpapers.pics/wp-content/uploads/sites/54/2023/10/43-Dark-Aesthetic-Wallpaper-WallpaperSafari.jpg">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/4ppRGrv.png">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
