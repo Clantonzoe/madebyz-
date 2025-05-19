@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     <title>🌺MADEBYZ🌺s</title>
-    <link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/R.c7306f0ad63c6c743431100fe0acfc2d?rik=6tL6RSA5KhhrpQ&pid=ImgRaw&r=0.jpg">
+    <link rel="icon" type="image/x-icon" https://wallpapers.pics/wp-content/uploads/sites/54/2023/10/43-Dark-Aesthetic-Wallpaper-WallpaperSafari.jpg">
 </head>
 <body>
 </html>
@@ -33,7 +33,7 @@
         }
 
         body {
-            background: url('https://th.bing.com/th/id/R.668eec52e2f90f9e517c65905a846704?rik=ADT3vRLOgC1syg&pid=ImgRaw&r=0') no-repeat center center fixed;
+            background: url('https://wallpapers.pics/wp-content/uploads/sites/54/2023/10/Black-wallpaper-aesthetic-Black-aesthetic-wallpaper-Black-phone-wallpaper-Iphone-wallpaper-vintage-758x426.jpg') no-repeat center center fixed;
             background-size: cover;
             background-color: var(--background-color);
             font-family: 'Lucida Handwriting', cursive;
