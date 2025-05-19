@@ -1,7 +1,8 @@
 <html>
 <head>
     <title>🌺MADEBYZ🌺</title>
-    <link rel="icon" type="image/png" href="https://i.imgur.com/4ppRGrv.png">
+<link rel="icon" type="image/png" href="https://i.imgur.com/4ppRGrv.png">
+
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
