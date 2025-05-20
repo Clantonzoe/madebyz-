@@ -66,7 +66,7 @@
 
         @media (max-width: 1024px) {
             body::before, body::after {
-                content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸";
+                content: "🎀🌸🎀🌸🎀🌸🎀🌸🎀🌸🎀";
                 font-size: 18px;
             }
         }
